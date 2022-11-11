@@ -1,0 +1,307 @@
+/**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Lato:wght@400;700;900&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&family=Roboto+Condensed&family=Roboto:wght@300;400;500&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+ body {
+     background-color: #f0f4f4;
+     color: rgba(38,51,51,.9);
+     padding: 10%;
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     justify-content: center;
+     font-family: 'Source Sans Pro', sans-serif;
+ }
+ 
+ h1 {
+     font-size: 1.5em;
+     line-height: 1.43em;
+     text-transform: none;
+     text-decoration: none;
+     letter-spacing: .07px;
+     font-weight: 700;
+     font-style: normal;
+ }
+ 
+ h2 {
+     font-style: italic;
+     font-size: 1.5em;
+     line-height: 1.43em;
+     font-weight: 400;
+ }
+ 
+ .image-wrapper {
+     width: 100%;
+     height: 50%;
+ }
+ 
+ img {
+     width: 100%;
+ }
+ 
+ .upper-body p {
+     font-size: 1.7em;
+     line-height: 1.5em;
+     text-transform: none;
+     text-decoration: none;
+     letter-spacing: 1px;
+     font-weight: 300;
+     font-style: normal;
+ }
+ 
+ button {
+     padding: 25px 46px;
+     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+     font-size: 20px;
+     font-weight: 600;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     letter-spacing: 5px;
+     font-weight: 300;
+     font-style: normal;
+     color: #263333;
+     background-color: #fff;
+     border-color: #fff;
+ }
+ 
+ .mid-body {
+     margin-top: 80px;
+ }
+ 
+ .mid-body p {
+     color: #000000;
+     font-size: 17px;
+     line-height: 1.9em;
+     text-transform: none;
+     text-decoration: none;
+     font-weight: 400;
+     font-style: normal;
+     margin: 0 0 1.9em;
+ }
+ 
+ .quote {
+     font-weight: 700;
+     font-style: italic;
+     color: #000000;
+     font-size: 17px;
+ }
+ 
+ nav li {
+     list-style: none;
+     display: inline-block;
+ }
+ 
+ nav {
+     display: flex;
+     flex-direction: row;
+     align-items: end;
+     justify-content: space-between;
+     width: 100%;
+     margin-bottom: 8%;
+ }
+ 
+ nav li a {
+     color: #263333;
+     text-decoration: none;
+     text-transform: uppercase;
+     padding: 16px 9px;
+     font-family: "Source Sans Pro";
+     font-size: 14px;
+     line-height: 1.2em;
+     letter-spacing: .72px;
+     font-weight: 400;
+ }
+ 
+ nav li a:hover {
+     border-bottom: solid 3px white;
+ }
+ 
+ nav img {
+     height: auto;
+     width: auto;
+     max-height: 170px;
+     max-width: 100%;
+     margin-bottom: 50px;
+ }
+ 
+ .content-wrapper {
+     border-top: 3px solid white;
+     border-bottom: 3px solid white;
+     padding: 5% 0;
+ }
+ 
+ footer {
+     border-bottom: 3px solid white;
+     width: 100%;
+     padding: 30px 0;
+     color: #000;
+ }
+ 
+ .quote {
+     border-left: solid 2px black;
+     line-height: 1.3;
+     padding-left: 20px;
+     margin-top: 70px;
+ }
+ 
+ .centered {
+     display: flex;
+     width: 100%;
+     justify-content: center;
+     margin-top: 40px;
+ }
+ 
+ 
+ /* About page */
+ 
+ .about body {
+     border-bottom: solid 3px white;
+ }
+ 
+ .about h1 {
+     font-size: 3em;
+     line-height: 1.3em;
+     font-weight: 700;
+     color: #000000;
+     margin: 20px;
+ }
+ 
+ .about p {
+     font-family: "Source Sans Pro";
+     font-size: 17px;
+     line-height: 1.9em;
+     text-transform: none;
+     text-decoration: none;
+     font-weight: 400;
+     font-style: normal;
+     margin: 0 0 1.9em;
+ }
+ 
+ .about .content-wrapper {
+     border-bottom: solid 3px #fff;
+ }
+ 
+ .about img {
+     width: 100%;
+     float: left;
+     max-width: 350px;
+     margin: 20px 20px 20px 0;
+ }
+ 
+ 
+ /* Services Page */
+ 
+ .services-page .content-wrapper {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .services {
+     text-align: center;
+     width: 50%;
+     margin: 20px;
+     padding-bottom: 10px;
+     border-bottom: solid 3px #fff;
+ }
+ 
+ .services p {
+     font-size: 17px;
+ }
+ 
+ .services.couple {
+     border: none !important;
+ }
+ 
+ 
+ .services-page  h2 {
+     font-size: 1.7em;
+     line-height: 1.5em;
+     letter-spacing: 1px;
+     font-style: normal;
+     font-weight: 700;
+ }
+ 
+ 
+ /* Contact page */
+ 
+ #map {
+     height: 400px;
+     /* The height is 400 pixels */
+     width: 100%;
+     /* The width is the width of the web page */
+   }
+ 
+ input {
+     width: 100%;
+     padding: 16px;
+     margin: 20px 0 10px;
+     border: 1px solid #ccc;
+     background: #fafafa;
+     color: #000;
+     font-family: sans-serif;
+     font-size: 12px;
+     line-height: normal;
+     box-sizing: border-box;
+     border-radius: 2px;
+ }
+ 
+ #fname, #lname {
+     width: 95%;
+ }
+ 
+ .row {
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ .col.signup-col {
+     width: 98%;
+ }
+ 
+ .signup-button {
+     display: inline-block;
+     width: auto;
+     height: auto;
+     padding: 10px 30px;
+     border-width: 0;
+     text-align: center;
+     cursor: pointer;
+     outline: none;
+     -webkit-appearance: none;
+     appearance: none;
+     margin-top: 30px;
+ }
+ 
+ .form {
+     border-top: solid 3px #fff;
+ }
+ 
+ .contact-info {
+     margin-bottom: 40px;
+     display: flex;
+     width: 100%;
+ }
+ 
+ .left {
+     width: 40%;
+ }
+ .right {
+     width: 60%;
+ }
+ 
+ .contact-info p, 
+ .contact-info li {
+     line-height: 1.3;
+     margin: 10px 30px 20px 0px;
+     font-size: 20px;
+ }
+ 
+ .contact-info h1 {
+     font-size: 40px;
+ }
