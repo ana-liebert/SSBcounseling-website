@@ -307,3 +307,21 @@
  .contact-info h1 {
      font-size: 40px;
  }
+
+ .splash h1 {
+    font-size: 100px;
+    color: deeppink;
+    margin: 0;
+ }
+
+ .splash h3 {
+    font-size: 50px;
+ }
+
+ .splash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: blanchedalmond
+ }
