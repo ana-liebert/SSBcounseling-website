@@ -66,6 +66,8 @@
      color: #263333;
      background-color: #fff;
      border-color: #fff;
+     pointer-events: all;
+    cursor: pointer;
  }
  
  .mid-body {
