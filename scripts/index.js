@@ -18,6 +18,26 @@ function initMap() {
       map: map,
     });
   }
+
+
+  window.onload=function(){
+    const menu = document.querySelector("#menu-btn");
+    const nav = document.querySelector(".mobile-nav");
   
+    
+    function mobileMenu() {
+      menu.classList.add("show");
+      nav.classList.toggle("show");
+      
+    }
+    
+  
+    menu.addEventListener("click", mobileMenu);
+  }
+
+ 
   window.initMap = initMap;
+  
+
+
   

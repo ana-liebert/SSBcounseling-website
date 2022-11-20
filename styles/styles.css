@@ -91,13 +91,17 @@
      color: #000000;
      font-size: 17px;
  }
+
+ .desktop {
+    width: 100%;
+ }
  
- nav li {
+.desktop nav li  {
      list-style: none;
      display: inline-block;
  }
  
- nav {
+.desktop nav  {
      display: flex;
      flex-direction: row;
      align-items: end;
@@ -106,7 +110,7 @@
      margin-bottom: 8%;
  }
  
- nav li a {
+ .desktop nav li a {
      color: #263333;
      text-decoration: none;
      text-transform: uppercase;
@@ -118,17 +122,83 @@
      font-weight: 400;
  }
  
- nav li a:hover {
+ .desktop nav li a:hover {
      border-bottom: solid 3px white;
  }
  
- nav img {
+ .desktop nav img {
      height: auto;
      width: auto;
      max-height: 170px;
      max-width: 100%;
      margin-bottom: 50px;
  }
+
+ .mobile {
+    display: none !important;
+    width: 100%;
+    text-align: center;
+ }
+
+ .mobile-nav {
+    display: none !important;
+ }
+
+.show{
+    display: block !important;
+}
+
+.mobile nav li  {
+    list-style: none;
+    margin: 20px 0;
+    margin-left: -36px;
+}
+
+.mobile nav  {
+    width: 100%;
+    margin-bottom: 8%;
+}
+
+.mobile nav li a {
+    color: #263333;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px 9px;
+    font-family: "Source Sans Pro";
+    font-size: 17px;
+    line-height: 1.2em;
+    letter-spacing: .72px;
+    font-weight: 400;
+}
+
+.mobile nav li a:hover {
+    border-bottom: solid 3px white;
+}
+
+.mobile nav img {
+    height: auto;
+    width: auto;
+    max-height: 170px;
+    max-width: 100%;
+}
+
+#menu-btn {
+    font-size: 17px;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .desktop {
+        display: none !important;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+}
+
+
  
  .content-wrapper {
      border-top: 3px solid white;
@@ -292,6 +362,7 @@
  
  .left {
      width: 40%;
+     margin-right: 30px;
  }
  .right {
      width: 60%;
@@ -324,4 +395,33 @@
     justify-content: center;
     text-align: center;
     background: blanchedalmond
+ }
+
+ iframe {
+    width: 90%;
+    height: fit-content;
+ }
+
+ 
+ @media screen and (max-width: 800px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .left , .right {
+        width: 100%;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    body {
+        padding: 4%;
+    }
+
+    .about h1 {
+        font-size: 2em;
+        margin: 20px 0px;
+    }
  }
