@@ -184,8 +184,13 @@
 
 #menu-btn {
     font-size: 17px;
+    margin: 20px;
+    cursor: pointer;
 }
 
+.mobile-nav ul {
+    margin-bottom: 30px;
+}
 
 
 @media screen and (max-width: 650px) {
